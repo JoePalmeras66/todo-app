@@ -11,3 +11,9 @@ spring:
   integration:
     jdbc:
       initialize-schema: never
+
+springdoc:
+  api-docs:
+    enabled: false
+  swagger-ui:
+    enabled: false
