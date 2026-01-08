@@ -11,6 +11,7 @@ A RESTful Todo application built with Spring Boot, Spring Integration, and Postg
 - Toggle completion status
 - Event-driven architecture with Spring Integration
 - Docker support
+- Swagger/OpenAPI documentation
 
 ## Tech Stack
 
@@ -21,6 +22,15 @@ A RESTful Todo application built with Spring Boot, Spring Integration, and Postg
 - **PostgreSQL**
 - **Lombok**
 - **JUnit 5 + Mockito**
+- **SpringDoc OpenAPI (Swagger)**
+
+## API Documentation
+
+Interactive API documentation is available via Swagger UI:
+
+- **Swagger UI:** http://localhost:8080/swagger-ui.html
+- **OpenAPI JSON:** http://localhost:8080/v3/api-docs
+- **OpenAPI YAML:** http://localhost:8080/v3/api-docs.yaml
 
 ## API Endpoints
 
@@ -94,7 +104,8 @@ curl -X PATCH http://localhost:8080/api/todos/1/toggle
 src/main/java/com/example/todoapp/
 ├── TodoAppApplication.java
 ├── config/
-│   └── IntegrationConfig.java
+│   ├── IntegrationConfig.java
+│   └── OpenApiConfig.java
 ├── controller/
 │   └── TodoController.java
 ├── entity/
